@@ -21,7 +21,7 @@ Dir['tasks/**/*.rake'].each { |t| load t }
 Dir['ext/packaging/tasks/**/*'].sort.each { |t| load t }
 
 begin
-  @build_defaults ||= YAML.load(File.read('ext/build_defaults.yaml'))
+  @build_defaults ||= YAML.load_file('ext/build_defaults.yaml')
   @packaging_url  = @build_defaults['packaging_url']
   @packaging_repo = @build_defaults['packaging_repo']
 rescue
