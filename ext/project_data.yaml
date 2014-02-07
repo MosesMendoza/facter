@@ -29,3 +29,5 @@ gem_platform_dependencies:
 bundle_platforms:
   universal-darwin: ruby
   x86-mingw32: mingw
+pre_tar_task:
+  retrieve_cfp: 'package:apple'
