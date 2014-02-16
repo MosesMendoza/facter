@@ -25,6 +25,9 @@ describe "The netmask fact" do
     example_behavior_for "netmask from ifconfig output",
       "Ubuntu 12.04", "255.255.255.255",
       "ifconfig_ubuntu_1204.txt"
+    example_behavior_for "netmask from ifconfig output",
+      "AIX", "255.255.255.0",
+      "aix_ifconfig_all_with_multiple_interfaces"
   end
 
   context "on Windows" do
