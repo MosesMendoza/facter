@@ -647,6 +647,11 @@ namespace facter { namespace facts {
          * The structured fact for Solaris LDom facts.
          */
         constexpr static char const* ldom = "ldom";
+
+        /**
+         * The fact for the user
+         */
+        constexpr static char const* user = "user";
     };
 
 }}  // namespace facter::facts

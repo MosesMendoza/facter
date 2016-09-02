@@ -1891,3 +1891,11 @@ zpool_version:
         Solaris: use the `zpool` utility to retrieve the version for ZFS storage pools
     caveats: |
         Solaris: the `zpool` utility must be present.
+
+user:
+    type: string
+    description: Return the user.
+    resolution: |
+        OSX: use the `dscl` utility to retrieve the user.
+    caveats: |
+        OSX: the `dscl` utility must be present.

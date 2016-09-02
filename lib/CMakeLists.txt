@@ -59,6 +59,7 @@ set(LIBFACTER_COMMON_SOURCES
     "src/facts/resolvers/zpool_resolver.cc"
     "src/facts/resolvers/zone_resolver.cc"
     "src/facts/resolvers/zfs_resolver.cc"
+    "src/facts/resolvers/user_resolver.cc"
     "src/facts/scalar_value.cc"
     "src/logging/logging.cc"
     "src/ruby/aggregate_resolution.cc"
@@ -141,6 +142,7 @@ elseif ("${CMAKE_SYSTEM_NAME}" MATCHES "Darwin")
         "src/facts/osx/system_profiler_resolver.cc"
         "src/facts/osx/virtualization_resolver.cc"
         "src/util/bsd/scoped_ifaddrs.cc"
+        "src/facts/osx/user_resolver.cc"
     )
 elseif ("${CMAKE_SYSTEM_NAME}" MATCHES "SunOS")
     set(LIBFACTER_PLATFORM_SOURCES

@@ -13,6 +13,7 @@
 #include <internal/facts/bsd/filesystem_resolver.hpp>
 #include <internal/facts/osx/memory_resolver.hpp>
 #include <internal/facts/glib/load_average_resolver.hpp>
+#include <internal/facts/osx/user_resolver.hpp>
 
 using namespace std;
 
@@ -34,6 +35,7 @@ namespace facter { namespace facts {
         add(make_shared<bsd::filesystem_resolver>());
         add(make_shared<osx::memory_resolver>());
         add(make_shared<glib::load_average_resolver>());
+        add(make_shared<osx::user_resolver>());
     }
 
 }}  // namespace facter::facts
